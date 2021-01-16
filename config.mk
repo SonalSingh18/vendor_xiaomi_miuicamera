@@ -11,3 +11,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MiuiCamera \
     miuires
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.miui.notch=1
