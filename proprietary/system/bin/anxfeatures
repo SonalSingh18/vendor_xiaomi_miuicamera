@@ -1,0 +1,17 @@
+#!/system/bin/sh
+
+if [ ! -f "/sdcard/.MiuiCamera/.check" ]; then
+    rm -rf /sdcard/.ANXCamera/
+    mkdir -p /sdcard/.ANXCamera/cheatcodes/
+    cp -R /system/etc/ANXCamera/cheatcodes/* /sdcard/.ANXCamera/cheatcodes/
+    mkdir -p /sdcard/.ANXCamera/cheatcodes_reference/
+    cp -R /system/etc/ANXCamera/cheatcodes/* /sdcard/.ANXCamera/cheatcodes_reference/
+    mkdir -p /sdcard/.ANXCamera/features/
+    cp -R /system/etc/ANXCamera/features/* /sdcard/.ANXCamera/features/
+    mkdir -p /sdcard/.ANXCamera/features_reference/
+    cp -R /system/etc/ANXCamera/features/* /sdcard/.ANXCamera/features_reference/
+    touch /sdcard/.ANXCamera/.check
+fi
+if [ ! -d "/sdcard/MIUI/debug_log" ]; then
+    mkdir -p /sdcard/MIUI/debug_log
+fi
