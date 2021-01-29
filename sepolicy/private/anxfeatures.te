@@ -1,0 +1,13 @@
+# ANXfeatures service
+type anxfeatures, coredomain, domain;
+type anxfeatures_exec, exec_type, system_file_type, file_type;
+
+init_daemon_domain(anxfeatures)
+
+# denials
+allow anxfeatures shell_exec:file rx_file_perms;
+allow anxfeatures toolbox_exec:file rx_file_perms;
+allow anxfeatures { media_rw_data_file mnt_user_file sdcardfs storage_file }:dir create_dir_perms;
+allow anxfeatures { media_rw_data_file mnt_user_file sdcardfs storage_file }:{ file lnk_file } create_file_perms;
+allow anxfeatures anxfeatures:capability { dac_read_search dac_override };
+allow anxfeatures fuse:dir { getattr read open write create remove_name add_name search };
