@@ -10,4 +10,5 @@ allow anxfeatures toolbox_exec:file rx_file_perms;
 allow anxfeatures { media_rw_data_file mnt_user_file sdcardfs storage_file }:dir create_dir_perms;
 allow anxfeatures { media_rw_data_file mnt_user_file sdcardfs storage_file }:{ file lnk_file } create_file_perms;
 allow anxfeatures anxfeatures:capability { dac_read_search dac_override };
-allow anxfeatures fuse:dir { getattr read open write create remove_name add_name search };
+allow anxfeatures fuse:dir { getattr read open write create rmdir remove_name add_name search };
+allow anxfeatures fuse:file { create };
