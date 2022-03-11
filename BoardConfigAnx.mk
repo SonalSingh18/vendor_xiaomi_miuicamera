@@ -1,5 +1,5 @@
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     vendor/xiaomi/miuicamera/sepolicy/private
 
 SELINUX_IGNORE_NEVERALLOWS := true
