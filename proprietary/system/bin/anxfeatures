@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-if [ ! -f "/sdcard/.MiuiCamera/.check" ]; then
+if [ ! -f "/sdcard/.ANXCamera/.check" ]; then
     rm -rf /sdcard/.ANXCamera/
     mkdir -p /sdcard/.ANXCamera/cheatcodes/
     cp -R /system/etc/ANXCamera/cheatcodes/* /sdcard/.ANXCamera/cheatcodes/
