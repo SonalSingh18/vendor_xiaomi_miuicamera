@@ -25,6 +25,17 @@ android_app_import {
 }
 
 android_app_import {
+        name: "MiuiGallery",
+        owner: "xiaomi",
+        apk: "proprietary/system/priv-app/MiuiGallery/MiuiGallery.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+}
+
+android_app_import {
         name: "MiuiScanner",
         owner: "MiuiScanner",
         apk: "proprietary/system/priv-app/MiuiScanner/MiuiScanner.apk",
